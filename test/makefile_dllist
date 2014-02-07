@@ -1,0 +1,10 @@
+cc=gcc
+program=dllist
+
+all: $(program)
+
+$(program):
+	$(cc) -o $(program) -Wall ../list/dllist.c testdllist.c
+
+clean:
+	rm -r $(program)

@@ -1,0 +1,10 @@
+cc=gcc
+program=bstree
+
+all: $(program)
+
+$(program):
+	$(cc) -o $(program) -Wall ../tree/bstree.c testbst.c
+
+clean:
+	rm -r $(program)

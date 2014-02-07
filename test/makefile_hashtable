@@ -1,0 +1,10 @@
+cc=gcc
+program=hashtable
+
+all: $(program)
+
+$(program):
+	$(cc) -o $(program) -Wall ../dict/hashtable.c ../array/darray.c testhashtable.c
+
+clean:
+	rm -r $(program)

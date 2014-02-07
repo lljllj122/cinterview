@@ -1,0 +1,10 @@
+cc=gcc
+program=stack
+
+all: $(program)
+
+$(program):
+	$(cc) -o $(program) -Wall teststack.c
+
+clean:
+	rm -r $(program)

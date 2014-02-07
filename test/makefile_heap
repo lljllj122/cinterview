@@ -1,0 +1,9 @@
+cc=gcc
+program=heap
+
+all: $(program)
+$(program):
+	$(cc) -o $(program) -Wall ../tree/heap.c testheap.c
+
+clean:
+	rm -r $(program)

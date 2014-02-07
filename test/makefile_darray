@@ -1,0 +1,10 @@
+cc=gcc
+program=darray
+
+all: darray
+
+darray:
+	$(cc) -o $(program) -Wall ../array/darray.c testdarray.c
+
+clean:
+	rm -r $(program)

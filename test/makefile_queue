@@ -1,0 +1,10 @@
+cc=gcc
+program=queue
+
+all: $(program)
+
+$(program):
+	$(cc) -o $(program) -Wall testqueue.c
+
+clean:
+	rm -r $(program)

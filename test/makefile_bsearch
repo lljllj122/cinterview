@@ -1,0 +1,10 @@
+cc=gcc
+program=bsearch
+
+all: $(program)
+
+$(program):
+	$(cc) -o $(program) -Wall ../search/bsearch.c testbsearch.c
+
+clean:
+	rm -r $(program)
